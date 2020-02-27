@@ -1,0 +1,33 @@
+.wrapper {
+  background: rgba(12, 8, 8, 0.9);
+}
+.container {
+  width: 320px;
+  padding: 40px 20px;
+  margin: auto;
+}
+.mailItem {
+  margin-bottom: 15px;
+}
+.mailBoxDescrip,
+.mailBox {
+  color: #ffffff;
+}
+.emailLink {
+  text-decoration: none;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .mailList {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}

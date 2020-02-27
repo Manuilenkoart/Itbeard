@@ -1,0 +1,18 @@
+.statisticsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.statisticsN {
+  font-family: var(--decorativeFont);
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .statisticsN {
+    font-family: var(--decorativeFont);
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+}

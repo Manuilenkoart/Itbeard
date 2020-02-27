@@ -1,0 +1,41 @@
+.videoList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.figcaption {
+  padding: 10px 10px 20px 10px;
+}
+.videoListItem {
+  width: 320px;
+  box-shadow: 1px 23px 20px 0px #ebebeb;
+  border: #f0fff0;
+  font: inherit;
+  border-radius: 2px;
+  outline: none;
+  margin: 15px;
+}
+
+.videoListItemImgPlaceHolder {
+  max-width: 320px;
+  background-color: #ccc;
+  font-size: 0;
+  text-align: center;
+}
+.videoListItemTitle {
+  margin-bottom: 10px;
+}
+.videoListItemDescription {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}

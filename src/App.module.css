@@ -1,0 +1,35 @@
+.wrapper {
+  background-image: linear-gradient(
+    to right top,
+    #aa4731,
+    #b6543b,
+    #c26145,
+    #cf6e4f,
+    #db7b5a,
+    #e78573,
+    #f0918b,
+    #f69ea2,
+    #f2b1c5,
+    #eac6dd,
+    #e5dae9,
+    #ebebeb
+  );
+  height: 100vh;
+}
+.container {
+  width: 320px;
+  margin: 0 auto 50px auto;
+}
+img {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
