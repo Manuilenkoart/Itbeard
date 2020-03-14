@@ -1,0 +1,20 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(47, 135, 194);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.modal {
+  max-width: 800px;
+  width: 100%;
+  min-height: 320px;
+  /* border: 3px solid green; */
+  /* background-color: black; */
+}

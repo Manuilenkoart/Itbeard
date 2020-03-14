@@ -4,12 +4,16 @@ const express = require("express");
 const app = express();
 const server = require("http").createServer(app);
 const io = require("socket.io")(server);
+const bodyParser = require("body-parser");
+const apiRoutes = require("./routes/apiroutes/apiRoutes");
+
 const port = process.env.PORT || 4001;
 const axios = require("axios");
 
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "../build")));
-
-app.get("/", (req, res, next) => res.sendFile(__dirname + "./index.html"));
+app.use("/", apiRoutes);
 
 // sockets test
 
