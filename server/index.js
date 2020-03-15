@@ -24,7 +24,7 @@ const getApiAndEmit = async socket => {
     ); // Getting the data
     socket.emit("FromAPI", res.data.items[0].statistics); // Emitting a new message. It will be consumed by the client
   } catch (error) {
-    console.error(`Error: ${error.code}`);
+    console.error(`Error socket server: ${error.code}`);
   }
 };
 let interval;
@@ -33,7 +33,7 @@ io.on("connection", socket => {
   if (interval) {
     clearInterval(interval);
   }
-  interval = setInterval(() => getApiAndEmit(socket), 20000); // interval 20 sec
+  interval = setInterval(() => getApiAndEmit(socket), 30000); // interval 30 sec
   socket.on("disconnect", () => {
     console.log("Client disconnected");
   });
