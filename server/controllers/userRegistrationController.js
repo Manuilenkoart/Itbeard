@@ -10,7 +10,7 @@ const userRegistrationControllerPost = (req, res) => {
     html: `
           <h2>Пляши, пришло письмо с сайта!</h2>
 
-          <i>данные вашей учетной записи:</i>
+          <i>Таааакс, что тут нам написали:</i>
           <ul>
               <li>email: ${req.body.email}</li>
 
@@ -22,7 +22,7 @@ const userRegistrationControllerPost = (req, res) => {
   };
   mailer(message);
 
-  res.status(200).send("email отпрвлен!");
+  res.status(200).send("Email отправлен!");
 };
 
 module.exports = {

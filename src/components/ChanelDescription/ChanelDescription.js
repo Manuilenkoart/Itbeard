@@ -27,8 +27,7 @@ export default class ChanelDescription extends Component {
         <>
           {isModalOpen && (
             <Modal onClose={this.closeModal}>
-              <h1>Registration </h1>
-              <Form />
+              <Form onClose={this.closeModal} />
             </Modal>
           )}
         </>
@@ -37,7 +36,7 @@ export default class ChanelDescription extends Component {
           <section className={CSS.bgText}>
             <h1 className={CSS.descriptionTitle}>#{descriptionChanel.title}</h1>
             <p className={CSS.descriptiontext}>{descriptionChanel.mainInfo2}</p>
-            <button className={CSS.sendComment} onClick={this.openModal}>
+            <button className={CSS.button} onClick={this.openModal}>
               <p>Отправить отзыв</p>
             </button>
           </section>
